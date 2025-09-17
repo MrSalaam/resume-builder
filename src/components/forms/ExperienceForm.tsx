@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Briefcase, PlusCircle, Trash2, Building2, Calendar, ChevronDown, ChevronUp, Award, Edit3 } from 'lucide-react';
 import { useResumeData, type Experience } from '../../contexts/ResumeContext';
 import { FormSection } from '../ui/FormSection';

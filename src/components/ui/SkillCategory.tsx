@@ -4,10 +4,9 @@ import type { Skill } from '../../contexts/ResumeContext';
 interface SkillCategoryProps {
   level: string;
   skills: Skill[];
-  getSkillLevelColor: (level: string) => string;
 }
 
-export const SkillCategory: FC<SkillCategoryProps> = ({ level, skills, getSkillLevelColor }) => {
+export const SkillCategory: FC<SkillCategoryProps> = ({ level, skills }) => {
   if (skills.length === 0) return null;
 
   const levelColors = {

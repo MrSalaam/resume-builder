@@ -28,7 +28,7 @@ export const ProjectGrid: FC<ProjectGridProps> = ({
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div 
               key={project.id} 
               className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 lg:p-8 hover:shadow-xl transition-all duration-300 group"
@@ -59,7 +59,7 @@ export const ProjectGrid: FC<ProjectGridProps> = ({
                 <div className="flex items-center gap-2 text-gray-600 mb-4">
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm font-medium">
-                    {formatDateRange(project.startDate, project.endDate, project.current)}
+                    {formatDateRange(project.startDate, project.endDate)}
                   </span>
                 </div>
               )}

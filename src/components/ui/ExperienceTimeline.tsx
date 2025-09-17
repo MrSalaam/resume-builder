@@ -33,7 +33,7 @@ export const ExperienceTimeline: FC<ExperienceTimelineProps> = ({
           <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-700"></div>
           
           <div className="space-y-8">
-            {experiences.map((exp, index) => (
+            {experiences.map((exp) => (
               <div key={exp.id} className="relative flex gap-6">
                 {/* Timeline Dot */}
                 <div className="relative z-10 w-12 h-12 bg-white border-4 border-blue-50 rounded-full flex items-center justify-center shadow-lg">

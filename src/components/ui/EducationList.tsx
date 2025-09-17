@@ -30,7 +30,7 @@ export const EducationList: FC<EducationListProps> = ({
         </div>
 
         <div className="space-y-6">
-          {education.map((edu, index) => {
+          {education.map((edu) => {
             const degreeLevel = getDegreeLevel(edu.degree);
             const levelColor = getLevelColor(degreeLevel);
             
