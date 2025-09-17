@@ -1,0 +1,59 @@
+@media print {
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Make the resume-content and its children visible */
+  #resume-content, #resume-content * {
+    visibility: visible;
+  }
+
+  /* Position the resume-content to take up the whole page */
+  #resume-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: visible; /* Ensure nothing is cut off */
+  }
+
+  /* Remove shadows and other screen-only styles from the resume container */
+  #resume-content > div {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+  }
+
+  /* Ensure no scrollbars appear on the body */
+  body {
+    overflow: hidden;
+  }
+
+  /* Hide the export button in the print view */
+  .export-button-footer {
+    display: none;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+    color-adjust: exact !important; /* Firefox */
+  }
+
+  /* TailwindCSS uses CSS variables for colors, which might not work well in all print environments.
+     Let's set some explicit colors for printing. */
+  .text-gray-900 { color: #1a202c !important; }
+  .text-gray-700 { color: #4a5568 !important; }
+  .text-gray-600 { color: #718096 !important; }
+  .text-white { color: #fff !important; }
+  .text-blue-100 { color: #ebf8ff !important; }
+  .border-blue-600 { border-color: #3182ce !important; }
+  .border-blue-300 { border-color: #90cdf4 !important; }
+  .bg-gray-50 { background-color: transparent !important; }
+}
