@@ -1,4 +1,4 @@
-# 🚀 AI-Powered Resume Builder
+# 🚀  Resume Builder
 
 This is a modern, feature-rich resume builder designed to help you craft a professional and visually appealing resume with ease. Built with a powerful tech stack, it offers a seamless, real-time editing experience and leverages AI to enhance your content.
 
